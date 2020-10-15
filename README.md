@@ -5,11 +5,9 @@ Home: https://github.com/ethereum/pyrlp
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rlp-feedstock/blob/master/LICENSE.txt)
 
 Summary: A package for Recursive Length Prefix encoding and decoding
-
-
 
 Current build status
 ====================
