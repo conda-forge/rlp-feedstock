@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools-markdown
   run:
     - eth-utils >=1.0.2,<2
-    - python
+    - python >=3.6
 
 test:
   imports:
