@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - setuptools-markdown
   run:
-    - eth-utils >=1.0.2,<2
+    - eth-utils >=2.0.0,<3
     - python >=3.6
 
 test:
