@@ -11,17 +11,18 @@ source:
   sha256: 27273fc2dbc3513c1e05ea6b8af28aac8745fb09c164e39e2ed2807bf7e1b342
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - pip
+    - setuptools
+    - setuptools-markdown
   host:
     - pip
     - python
-    - setuptools
-    - setuptools-markdown
-  build:
     - setuptools
     - setuptools-markdown
   run:
