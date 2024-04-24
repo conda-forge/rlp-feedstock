@@ -1,5 +1,5 @@
 {% set name = "rlp" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 61a5541f86e4684ab145cb849a5929d2ced8222930a570b3941cf4af16b72a78
+  sha256: bcefb11013dfadf8902642337923bd0c786dc8a27cb4c21da6e154e52869ecb1
 
 build:
   number: 0
