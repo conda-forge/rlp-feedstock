@@ -13,7 +13,10 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    env:
+      SETUPTOOLS_SCM_PRETEND_VERSION: ${{ version }}
+    content: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,6 +24,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools-markdown
+    - setuptools-scm
   run:
     - eth-utils >=2.0.0
     - python >={{ python_min }}
