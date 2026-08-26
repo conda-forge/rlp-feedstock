@@ -11,9 +11,11 @@ source:
   sha256: ae8ac791160c160e270f9c7df76e68f4d42bb86a13726d807b9357c312d0bac4
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - export SETUPTOOLS_SCM_PRETEND_VERSION="{{ version }}"
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,6 +23,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools-markdown
+    - setuptools-scm
   run:
     - eth-utils >=2.0.0
     - python >={{ python_min }}
